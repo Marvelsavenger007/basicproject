@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    box-sizing: inherit;
+    display: block;
+    font-size: 15px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 2.5px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.topbar {
+    z-index: 10000;
+    position: fixed;
+    text-align: justify;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.topbar-design{    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+img{
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: inherit;
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+}
+
+
+p{
+    line-height: 2vh;
+}
+
+a{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.link-button:hover{
+    background-color: rgb(173, 158, 158);
+    padding: 10px 20px;
+}
+
+.topbar-title{
+    padding: 10px 20px;
+    letter-spacing: 3px;
+
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-right: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+
+.title-button{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link-button{
+    padding: 10px 20px;
+}
+
+.architecture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.architecture-content{
+    background-image: url(architect.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 79vw;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-image-design{
+    background-color: rgba(0, 0, 0, 0.555);
+    padding: 10px;
+}
+
+
+.title-image-name{
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: absolute;
+}
+
+.architecture-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.architecture-body{
+    background-color: white;
+    width: 77vw;
+    margin: 20px;
+    padding: 20px;
+}
+
+.project-title{
+    font-size: 25px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding-bottom: 20px;
+}
+
+hr{
+    background-color: 0.1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.building-row{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-display-table{
+    padding: 0 8px;
+    margin-bottom: 16px!important;
+    float: left;
+}
+
+.table-design-title{
+    position: absolute;
+    display: block;
+    padding: 8px 16px!important;
+    background-color: black!important;
+    letter-spacing: 1.5px;
+    color: white!important;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+    .building-row{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: 0 8px;
+        margin-bottom: 16px!important;
+        /* float: left; */
+    }
+}

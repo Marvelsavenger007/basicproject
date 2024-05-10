@@ -1,0 +1,236 @@
+.topbar {
+    z-index: 10000;
+    position: fixed;
+    text-align: justify;
+    background-color: white;
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0px 1px rgb(187, 185, 185);
+    margin-top: -1vh;
+}
+
+.topbar-design{    
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+p{
+    line-height: 2vh;
+}
+
+a{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: rgb(173, 158, 158);
+    padding: 10px 20px;
+}
+
+.topbar-title{
+    padding: 10px 20px;
+    letter-spacing: 3px;
+
+}
+
+.link{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-right: 120px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 3px;
+}
+
+.title-button{
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link-button{
+    padding: 10px 20px;
+}
+
+.title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-image-name{
+    margin-left: 6vw;
+    margin-top: -8vh;
+    font-size: 30px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.about-design{
+    width: 30vw;
+    margin-left: 2vw;
+}
+
+.about-title{
+    text-align: center;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+
+.about-heading{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.about-history1{
+    color: grey;
+    letter-spacing: 3px;
+}
+
+.about-history{
+    letter-spacing: 3px;
+}
+
+hr{
+    width: 60%;
+    align-items: center;
+    color: rgb(238, 220, 220);
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 34vw;
+}
+
+.menu-item-title{
+    margin-left: 10vw;
+    margin-bottom: 8vh;
+}
+
+.menu-item-list {
+    margin-bottom: 5vh;
+}
+
+.contact{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+.contact-box{
+    width: 60vw;
+}
+
+.contact-messages{
+    color: rgb(0, 174, 255); 
+    font-size: 16px; 
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-table{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.form-design{
+    width: 60vw;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 60vw;
+    height: 5vh;
+    font-size: 15px;
+}
+
+input[type=number] {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 60vw;
+    height: 5vh;
+    font-size: 15px;
+}
+
+input[type=datetime-local] {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 60vw;
+    height: 5vh;
+    font-size: 15px;
+}
+
+.submit-design{
+    width: 150px;
+    height: 45px;
+    background-color: #f1f1f1!important;;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-design:hover{
+    background-color: gray;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #f1f1f1;   
+    height: 10vh;
+    margin-top: 2rem;
+}
+
+.footer-content{
+    /* width: 100vw; */
+    text-align: center!important;
+}
+
+
+
+/* 
+how to center a div 
+create two div with having one parent div container and a sub div
+code snippet
+
+
+.footer-link{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: green;   
+    height: 10vh;
+}
+
+.footer-content{
+    width: 100vw;
+    text-align: center!important;
+    align-items: center!important;
+} */
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cafe.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav"> 
+        <a class="navlist" href="#home">Home</a>
+        <a class="navlist" href="#about">About</a>
+        <a class="navlist" href="#menu">Menu</a>
+        <a class="navlist" href="#where">Where</a>
+    </div>
+    <div class="home-details" id="home">
+        <div class="opening">
+            <p class="open">Open from 6am to 5pm</p>
+        </div>
+        <div class="title">
+            <h1> the <br>Cafe</h1>
+        </div>
+        <div class="location">            
+            <p class="address">15 Adr street, 5015</p>
+        </div>
+    </div>
+
+    <div class="about-container" id="about">
+        <div class="about-content" style="max-width:700px">
+          <h5 class="about-title"><span class="about-tag">ABOUT THE CAFE</span></h5>
+          <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+          <div class="product-information">
+            <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+          </div>
+          <img src="./w3images/coffeeshop.jpg" style="width:100%;max-width:1000px">
+          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+          <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+        </div>
+    </div>
+    <div class="menu-container" id="menu">
+        <div class="menu-content" style="max-width:700px">       
+          <h5 class="menu-title"><span class="menu-tag">THE MENU</span></h5>        
+          <div class="food-content">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+              <div class="food-title tablink">Eat</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="food-title tablink">Drink</div>
+            </a>
+          </div>
+      
+          <div id="Eat" class="food-container">
+            <h5>Bread Basket</h5>
+            <p class="food-content">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+          
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p class="food-content">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+          
+            <h5>Belgian Waffle</h5>
+            <p class="food-content">Vanilla flavored batter with malted flour 7.50</p><br>
+          
+            <h5>Scrambled eggs</h5>
+            <p class="food-content">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+          
+            <h5>Blueberry Pancakes</h5>
+            <p class="food-content">With syrup, butter and lots of berries 8.50</p>
+          </div>      
+          <div id="Drinks" class="drink-container">
+            <h5>Coffee</h5>
+            <p class="drink-content">Regular coffee 2.50</p><br>
+          
+            <h5>Chocolato</h5>
+            <p class="drink-content">Chocolate espresso with milk 4.50</p><br>
+          
+            <h5>Corretto</h5>
+            <p class="drink-content">Whiskey and coffee 5.00</p><br>
+          
+            <h5>Iced tea</h5>
+            <p class="drink-content">Hot tea, except not hot 3.00</p><br>
+          
+            <h5>Soda</h5>
+            <p class="drink-content">Coke, Sprite, Fanta, etc. 2.50</p>
+          </div>  
+          <img src="./w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+    </div>
+    <div class="where-container" id="where" style="padding-bottom:32px;">
+        <div class="where" style="max-width:700px">
+          <h5 class="where-title"><span class="where-tag">WHERE TO FIND US</span></h5>
+          <p>Find us at some address at some place.</p>
+          <img src="./w3images/map.jpg" class="map-image" style="width:100%">
+          <p><span class="fyi-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+          <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+          <form action="cat.html" class="form-table">
+              <p><input class="input-design" type="text" placeholder="Name"></p>
+              <p><input class="input-design" type="number" placeholder="How many people"></p>
+              <p><input class="input-design" type="datetime-local" placeholder="Date and Time" required name="date" value="2024-01-01T08:00"></p>
+              <p><input class="input-design" type="text" placeholder="Message \ Special requirements"></p>
+              <input  class="submit-design" type="submit" value="SEND MESSAGE">
+          </form>
+        </div>
+    </div>
+    <footer class="footer-content">
+        <p>Powered by <a href="cat.html" title="W3.CSS" target="_blank" class="footer-hover">w3.css</a></p>
+    </footer>
+      
+
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("menu");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+        </script>
+        
+      
+</body>
+</html>

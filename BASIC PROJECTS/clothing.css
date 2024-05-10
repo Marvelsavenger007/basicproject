@@ -1,0 +1,100 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+
+}
+
+.clothing-line{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.clothing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.logo{
+    margin-bottom: 100px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+}
+
+.sidebar-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.jeans-format{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-content a {
+    text-decoration: none;
+    color: gray;
+    background-color: white;
+    font-size: 24px;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.sidebar-content a:hover{
+    background-color: grey;
+    color: black;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.contact a{
+    font-weight: 300;
+}
+
+.clothing-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    width: 900px;
+    padding: 10px;
+    right: auto;
+    position: relative;
+}
+
+.clothes-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    line-height: 2px;
+}
+
+.clothes-details{
+    padding: 0em 16px;
+}
+
+.clothes-details p {
+    color: gray;
+    padding: 5px 0px;
+}
+
+.clothes-details span{
+    font-weight: bold;
+    padding: 10px 0px;
+}
